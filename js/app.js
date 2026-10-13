@@ -714,30 +714,53 @@
   }
 
   // --- FAQ Accordion ---
+  // Works for both data-rendered FAQs (#faqContainer) and FAQs written directly in the page HTML.
   function initFaqAccordion() {
     const faqContainer = $('#faqContainer');
-    if (!faqContainer || !window.BOLD_DATA) return;
-
-    const faqs = window.BOLD_DATA.faqs || [];
-    faqContainer.innerHTML = faqs.map((faq, index) => `
-      <div class="faq-item ${index === 0 ? 'open' : ''}">
-        <button class="faq-question" type="button" aria-expanded="${index === 0 ? 'true' : 'false'}">
-          <span>${faq.q}</span>
-          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-        <div class="faq-answer">
-          <p>${faq.a}</p>
+    if (faqContainer && window.BOLD_DATA) {
+      const faqs = window.BOLD_DATA.faqs || [];
+      faqContainer.innerHTML = faqs.map((faq, index) => `
+        <div class="faq-item ${index === 0 ? 'open' : ''}">
+          <button class="faq-question" type="button" aria-expanded="${index === 0 ? 'true' : 'false'}">
+            <span>${faq.q}</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p>${faq.a}</p>
+          </div>
         </div>
-      </div>
-    `).join('');
+      `).join('');
+    }
 
-    $$('.faq-item', faqContainer).forEach(item => {
+    const items = $$('.faq-item');
+    if (!items.length) return;
+
+    // Wrap answer content so it can animate open/closed with a grid-rows transition
+    items.forEach(item => {
+      const answer = item.querySelector('.faq-answer');
+      if (answer && !answer.querySelector(':scope > .faq-answer-inner')) {
+        const inner = document.createElement('div');
+        inner.className = 'faq-answer-inner';
+        while (answer.firstChild) inner.appendChild(answer.firstChild);
+        answer.appendChild(inner);
+      }
       const btn = item.querySelector('.faq-question');
+      if (btn) {
+        btn.setAttribute('type', 'button');
+        btn.setAttribute('aria-expanded', item.classList.contains('open') ? 'true' : 'false');
+      }
+    });
+
+    items.forEach(item => {
+      const btn = item.querySelector('.faq-question');
+      if (!btn) return;
       btn.addEventListener('click', () => {
         const isOpen = item.classList.contains('open');
-        $$('.faq-item', faqContainer).forEach(other => {
+        const group = item.parentElement ? $$('.faq-item', item.parentElement) : [item];
+        group.forEach(other => {
           other.classList.remove('open');
-          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          const otherBtn = other.querySelector('.faq-question');
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
         });
         if (!isOpen) {
           item.classList.add('open');
@@ -783,7 +806,7 @@
     // Populate Volunteer Roles
     const rolesContainer = $('#volunteerRolesGrid');
     if (rolesContainer) {
-      rolesContainer.innerHTML = window.BOLD_DATA.volunteerRoles.map(role => `
+      rolesContainer.innerHTML = (window.BOLD_DATA.volunteerRoles || []).map(role => `
         <article class="role-card">
           <div class="role-header">
             <h3 class="role-title">${role.title}</h3>
@@ -795,6 +818,23 @@
             <div><strong>Requirements:</strong> ${role.requirements}</div>
           </div>
           <a href="#volunteer-application" class="btn btn-sm btn-outline-gold" style="margin-top: auto;">Apply for this Role</a>
+        </article>
+      `).join('');
+    }
+
+    // get-involved.html: no volunteerRoles in data yet, so list the executive roles instead
+    if (rolesContainer && !window.BOLD_DATA.volunteerRoles && window.BOLD_DATA.executiveRoles) {
+      rolesContainer.innerHTML = window.BOLD_DATA.executiveRoles.map(role => `
+        <article class="role-card">
+          <div class="role-header">
+            <h3 class="role-title">${role.title}</h3>
+            <span class="badge badge-gold">${role.status || ''}</span>
+          </div>
+          <div class="exec-role-category">${role.category || ''}</div>
+          <ul class="exec-role-duties">
+            ${(role.duties || []).slice(0, 3).map(d => `<li class="exec-role-duty-item">${d}</li>`).join('')}
+          </ul>
+          <a href="become-a-member.html#exec-roles" class="btn btn-sm btn-outline-gold" style="margin-top: auto;">Apply for this Role</a>
         </article>
       `).join('');
     }
@@ -853,20 +893,29 @@
 
   // --- Document Ready Initialization ---
   document.addEventListener('DOMContentLoaded', () => {
-    initModals();
-    initMobileNav();
-    initScrollspy();
-    initDynamicContent();
-    initResourceHub();
-    initEventsHub();
-    initVolunteerForm();
-    initDonationSection();
-    initPartnershipForm();
-    initBranchModal();
-    initEventRsvp();
-    initNewsletter();
-    initContactForm();
-    initFaqAccordion();
+    // Run each feature independently so one failure doesn't break the rest of the page
+    [
+      initModals,
+      initMobileNav,
+      initScrollspy,
+      initDynamicContent,
+      initResourceHub,
+      initEventsHub,
+      initVolunteerForm,
+      initDonationSection,
+      initPartnershipForm,
+      initBranchModal,
+      initEventRsvp,
+      initNewsletter,
+      initContactForm,
+      initFaqAccordion
+    ].forEach(fn => {
+      try {
+        fn();
+      } catch (err) {
+        console.error(`BOLD: ${fn.name} failed`, err);
+      }
+    });
   });
 
 })();
