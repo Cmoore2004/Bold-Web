@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOLD — Black Outreach Leadership Directive | Enabling Black Student Success</title>
+  <meta name="description" content="BOLD is a student-led community initiative dedicated to increasing and enabling Black student success at the post-secondary level in Ontario through mentorship, school outreach, and leadership.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/bold-logo.png">
+</head>
+<body>
+
+  <!-- Prominent Top Contact Bar -->
+  <aside class="prominent-contact-bar" aria-label="Official Contact Information">
+    <div class="container prominent-contact-inner">
+      <div class="contact-bar-left">
+        <a href="mailto:bold.cos@gmail.com" class="contact-item-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>bold.cos@gmail.com</span>
+        </a>
+        <a href="https://instagram.com/BOLD.Ontario" target="_blank" rel="noopener noreferrer" class="contact-item-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span>@BOLD.Ontario</span>
+        </a>
+      </div>
+      <div class="contact-bar-right">
+        <span class="contact-item-badge">Student-Led Initiative</span>
+        <span style="color: var(--text-muted); font-size: 0.8rem;">Ontario, Canada</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <!-- Official Logo Lockup -->
+      <a href="index.html" class="brand-logo" aria-label="BOLD Home">
+        <img src="assets/images/bold-logo.png" alt="BOLD Official Logo" class="brand-logo-img">
+        <div class="brand-text-wrap">
+          <span class="brand-acronym">BOLD<span class="brand-dot">.</span></span>
+          <span class="brand-subtext">Black Outreach Leadership Directive</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu (Uniform Equivalent Spacing) -->
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="programs.html" class="nav-link">Programs & Resources</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="impact.html" class="nav-link">Our Impact</a>
+        <a href="partnerships.html" class="nav-link">Partnerships</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header CTAs (Fully Visible, No Cutoff) -->
+      <div class="header-actions">
+        <a href="become-a-member.html" class="btn btn-member-nav">Become a Member</a>
+        <a href="donate.html" class="btn btn-donate-nav">Donate</a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-nav-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer-overlay" aria-hidden="true">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/bold-logo.png" alt="BOLD Logo" class="brand-logo-img">
+          <div class="brand-text-wrap">
+            <span class="brand-acronym">BOLD<span class="brand-dot">.</span></span>
+            <span class="brand-subtext">Directive</span>
+          </div>
+        </a>
+        <button class="mobile-drawer-close" aria-label="Close Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <nav class="mobile-drawer-menu">
+        <a href="index.html" class="mobile-nav-link active">Home</a>
+        <a href="about.html" class="mobile-nav-link">About Us</a>
+        <a href="programs.html" class="mobile-nav-link">Programs & Resources</a>
+        <a href="events.html" class="mobile-nav-link">Events</a>
+        <a href="impact.html" class="mobile-nav-link">Our Impact</a>
+        <a href="partnerships.html" class="mobile-nav-link">Partnerships</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="become-a-member.html" class="mobile-nav-link" style="color: var(--bold-yellow); font-weight: 700;">Become a Member</a>
+        <a href="donate.html" class="mobile-nav-link" style="color: var(--bold-yellow); font-weight: 700;">Donate</a>
+      </nav>
+
+      <div style="padding-top: 20px; border-top: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 12px;">
+        <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted);">Direct Contact</div>
+        <a href="mailto:bold.cos@gmail.com" style="color: var(--text-white); font-size: 0.95rem; font-weight: 600; text-decoration: none;">bold.cos@gmail.com</a>
+        <a href="https://instagram.com/BOLD.Ontario" target="_blank" rel="noopener noreferrer" style="color: var(--bold-yellow); font-size: 0.95rem; font-weight: 700; text-decoration: none;">@BOLD.Ontario on Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- Hero Section (Front & Center High School Visit Photo) -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-header-center">
+          <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(253, 244, 150, 0.12); border: 1px solid rgba(253, 244, 150, 0.4); padding: 6px 16px; border-radius: var(--radius-full); margin-bottom: 20px;">
+            <span class="pulse-indicator"></span>
+            <span style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--bold-yellow);">Ontario Student-Led Initiative</span>
+          </div>
+
+          <h1 class="hero-title">
+            Enabling Black Student Success in <span class="highlight-word">Post-Secondary</span> Education.
+          </h1>
+
+          <p class="hero-description">
+            A student-led community initiative dedicated to increasing access to higher education, providing authentic mentorship, demystifying academic pathways, and building lasting community connections for Black youth across Ontario.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="become-a-member.html" class="btn btn-primary btn-lg">
+              <span>Become a Member</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#qr-signup" class="btn btn-secondary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              <span>Scan Sign-Up QR</span>
+            </a>
+            <a href="donate.html" class="btn btn-outline-yellow btn-lg">Support Our Mission</a>
+          </div>
+        </div>
+
+        <!-- Front and Center Photo: Mother Teresa Catholic Secondary School Visit -->
+        <div class="hero-featured-showcase">
+          <img src="assets/images/event-school-visit.jpg" alt="BOLD High School Outreach Event at Mother Teresa Catholic Secondary School" loading="eager">
+          <div class="hero-featured-caption">
+            <div>
+              <div style="font-weight: 800; font-size: 1rem; color: var(--text-white); margin-bottom: 2px;">
+                Mother Teresa Catholic Secondary School Visit
+              </div>
+              <div style="color: var(--text-muted); font-size: 0.825rem;">
+                BOLD student leaders in action delivering hands-on post-secondary guidance and inspiring Black youth.
+              </div>
+            </div>
+            <div class="hero-caption-pill">
+              <span class="pulse-indicator"></span>
+              <span>Frontline Outreach</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prominent QR Codes Sign-Up Section -->
+    <section class="qr-codes-section" id="qr-signup">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-yellow" style="margin-bottom: 8px;">Fast Mobile Sign-Up</span>
+          <h2 style="font-size: 2.2rem; font-weight: 900; color: var(--text-white); margin-bottom: 12px;">
+            Join BOLD with a Quick Scan
+          </h2>
+          <p class="section-subtitle">
+            Whether you are a secondary student seeking mentorship or a post-secondary student ready to lead as an executive, scan our official QR codes below to get involved immediately.
+          </p>
+        </div>
+
+        <div class="qr-cards-grid">
+          <!-- QR Card 1: Student Sign-up -->
+          <article class="qr-card">
+            <span class="qr-badge">Student Sign-Up (High School & Collegiate)</span>
+            <div class="qr-image-wrapper">
+              <img src="assets/images/qr-student-signup.png" alt="QR Code for BOLD Student Sign-Up" class="qr-image">
+            </div>
+            <h3 class="qr-card-title">Student Member Registration</h3>
+            <p class="qr-card-desc">
+              Sign up as a general student member to access peer mentorship pairings, university and college application workshops, campus tours, and academic transition resources.
+            </p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+              <a href="become-a-member.html#student-signup" class="btn btn-primary btn-sm">Direct Student Sign-Up</a>
+              <a href="assets/images/qr-student-signup.png" download="BOLD-Student-Signup-QR.png" class="btn btn-secondary btn-sm">Save QR Code</a>
+            </div>
+          </article>
+
+          <!-- QR Card 2: Executive Sign-up -->
+          <article class="qr-card">
+            <span class="qr-badge">Executive Sign-Up (~40 Active Leaders)</span>
+            <div class="qr-image-wrapper">
+              <img src="assets/images/qr-executive-signup.png" alt="QR Code for BOLD Executive Sign-Up" class="qr-image">
+            </div>
+            <h3 class="qr-card-title">Executive Team Application</h3>
+            <p class="qr-card-desc">
+              Join BOLD's student executive team. Apply for leadership positions including Regional Lead, Event Planner, Outreach, Secretary, Finance, and Communications across Ontario.
+            </p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+              <a href="become-a-member.html#exec-roles" class="btn btn-primary btn-sm">View Executive Roles</a>
+              <a href="assets/images/qr-executive-signup.png" download="BOLD-Executive-Signup-QR.png" class="btn btn-secondary btn-sm">Save QR Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Founding Story Section (With Exact Verified Copy) -->
+    <section class="section">
+      <div class="container">
+        <div style="max-width: 900px; margin: 0 auto; background: var(--bg-surface-1); border: 1px solid var(--border-medium); border-radius: var(--radius-xl); padding: 48px; position: relative;">
+          <span class="badge badge-yellow" style="margin-bottom: 16px;">Our Purpose & Roots</span>
+          <h2 style="font-size: 2rem; font-weight: 900; color: var(--text-white); margin-bottom: 20px; line-height: 1.25;">
+            Built By Black Student Leaders and Professionals for the Next Generation
+          </h2>
+          <p style="font-size: 1.15rem; line-height: 1.75; color: var(--text-primary); margin-bottom: 24px; font-weight: 500;">
+            “BOLD was created by Black undergraduate leaders and professionals who recognized that authentic peer mentorship, early campus exposure, and community support transform how students envision their futures. Rather than waiting for systemic gaps to close, our student leaders took initiative to build the digital and physical spaces they wished had existed when they were in high school.”
+          </p>
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding-top: 24px; border-top: 1px solid var(--border-subtle);">
+            <div style="color: var(--text-secondary); font-size: 0.95rem;">
+              Dedicated to youth equity, institutional representation, and self-determined academic achievement.
+            </div>
+            <a href="about.html" class="btn btn-outline-yellow btn-sm">
+              <span>Read Our Full Story</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Impact Metrics Section -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-yellow" style="margin-bottom: 8px;">Provincial Reach</span>
+          <h2 style="font-size: 2.2rem; font-weight: 900; color: var(--text-white); margin-bottom: 12px;">
+            Our Verified Community Impact
+          </h2>
+          <p class="section-subtitle">
+            Ground-level momentum driven by student commitment, secondary school partnerships, and dedicated Black youth across Ontario.
+          </p>
+        </div>
+
+        <div class="impact-metrics-grid">
+          <div class="metric-card">
+            <span class="metric-number">400+</span>
+            <span class="metric-label">Students Reached</span>
+            <p class="metric-desc">Engaged through high school visits, campus tours, and university pathway workshops.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">20+</span>
+            <span class="metric-label">Outreach Events Delivered</span>
+            <p class="metric-desc">Secondary classroom presentations, university transition panels, and student assemblies.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">40+</span>
+            <span class="metric-label">BOLD Executives</span>
+            <p class="metric-desc">Dedicated undergraduate leaders and emerging professionals driving initiatives province-wide.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">10+</span>
+            <span class="metric-label">Community & School Partners</span>
+            <p class="metric-desc">Secondary schools, collegiate associations, and community equity organizations collaborating with BOLD.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="impact.html" class="btn btn-secondary">
+            <span>Explore Impact Stories & School Visits</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore BOLD Portal Cards (Directing to Separate Pages) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-yellow" style="margin-bottom: 8px;">Explore Our Work</span>
+          <h2 style="font-size: 2.2rem; font-weight: 900; color: var(--text-white); margin-bottom: 12px;">
+            Core Initiatives & Portals
+          </h2>
+          <p class="section-subtitle">
+            Navigate BOLD's dedicated portals for programming, upcoming events, educational resources, and institutional partnerships.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+          <!-- Card 1 -->
+          <div class="program-card">
+            <span class="badge badge-yellow" style="margin-bottom: 12px;">Flagship Programming</span>
+            <h3 class="program-title">Programs & Educational Resources</h3>
+            <p class="program-desc">
+              Discover our Secondary School Outreach presentations, 1-on-1 Peer Mentorship cohorts, curated Ontario application guides (OUAC / ontariocolleges.ca), and scholarship directories.
+            </p>
+            <div style="margin-top: auto; padding-top: 16px;">
+              <a href="programs.html" class="btn btn-secondary btn-sm" style="width: 100%;">View Programs & Resources</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="program-card">
+            <span class="badge badge-yellow" style="margin-bottom: 12px;">Campus & Community</span>
+            <h3 class="program-title">Events & Campus Tours</h3>
+            <p class="program-desc">
+              Join upcoming university immersion tours, transition clinics, and leadership summits. View recaps and photo highlights from our recent high school outreach sessions.
+            </p>
+            <div style="margin-top: auto; padding-top: 16px;">
+              <a href="events.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Events</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="program-card">
+            <span class="badge badge-yellow" style="margin-bottom: 12px;">Collaboration</span>
+            <h3 class="program-title">School & Community Partnerships</h3>
+            <p class="program-desc">
+              Educators, guidance counsellors, and administrators can request a customized high school outreach presentation. Community organizations can submit co-programming proposals.
+            </p>
+            <div style="margin-top: auto; padding-top: 16px;">
+              <a href="partnerships.html" class="btn btn-secondary btn-sm" style="width: 100%;">Request Partnership</a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="program-card">
+            <span class="badge badge-yellow" style="margin-bottom: 12px;">Supporter Pathways</span>
+            <h3 class="program-title">Support BOLD & Donate</h3>
+            <p class="program-desc">
+              Help fund student transportation subsidies for campus tours, workshop materials, scholarship awards, and educational resource kits for Black youth across Ontario.
+            </p>
+            <div style="margin-top: auto; padding-top: 16px;">
+              <a href="donate.html" class="btn btn-secondary btn-sm" style="width: 100%;">Support Our Work</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team & Leadership Structure Section -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-yellow" style="margin-bottom: 8px;">Student Leadership</span>
+          <h2 style="font-size: 2.2rem; font-weight: 900; color: var(--text-white); margin-bottom: 12px;">
+            Our Team & Leadership Structure
+          </h2>
+          <p class="section-subtitle">
+            BOLD is driven by collegiate leaders and emerging professionals dedicated to educational equity. Meet our Director of Outreach and explore current executive leadership portfolios.
+          </p>
+        </div>
+
+        <!-- Featured Director: Chase Moore -->
+        <div class="team-chase-featured">
+          <div class="team-chase-photo-wrap">
+            <img src="assets/images/chase-moore.jpg" alt="Chase Moore — Director of Outreach, BOLD" class="team-chase-photo">
+          </div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap;">
+              <span class="badge badge-yellow">Leadership Team</span>
+              <span style="color: var(--bold-yellow); font-size: 0.825rem; font-weight: 700;">Western University — Schulich School of Medicine</span>
+            </div>
+            <h3 style="font-size: 1.85rem; font-weight: 900; color: var(--text-white); margin-bottom: 4px;">
+              Chase Moore
+            </h3>
+            <div style="font-size: 1.05rem; font-weight: 700; color: var(--bold-yellow); margin-bottom: 14px;">
+              Director of Outreach
+            </div>
+            <p style="font-size: 0.975rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 20px;">
+              Chase Moore is a first-year medical student at Western University’s Schulich School of Medicine & Dentistry. As Director of Outreach for BOLD, Chase leads secondary school engagement, campus workshops, and provincial partnerships to empower Black youth across Ontario to envision and achieve their post-secondary ambitions.
+            </p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="mailto:bold.cos@gmail.com" class="btn btn-secondary btn-sm">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>Contact Outreach</span>
+              </a>
+              <a href="become-a-member.html" class="btn btn-outline-yellow btn-sm">Join Outreach Team</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Organizational Structure: Open Executive Positions -->
+        <div>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+            <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--text-white);">
+              BOLD Executive Structure & Available Roles (~40 Positions)
+            </h3>
+            <a href="become-a-member.html#exec-roles" style="color: var(--bold-yellow); font-weight: 700; font-size: 0.9rem; text-decoration: none;">
+              View all 7 role descriptions →
+            </a>
+          </div>
+
+          <div class="team-placeholder-grid">
+            <div class="team-placeholder-card">
+              <span class="badge" style="background: rgba(255,255,255,0.06); color: var(--text-muted); font-size: 0.7rem; margin-bottom: 8px;">Regional Operations</span>
+              <h4 style="color: var(--text-white); font-size: 1.1rem; font-weight: 800; margin-bottom: 4px;">Regional Lead</h4>
+              <p style="color: var(--text-muted); font-size: 0.825rem; line-height: 1.4; margin-bottom: 12px;">Oversee regional operations, school outreach, and local membership recruitment.</p>
+              <a href="become-a-member.html#exec-roles" class="btn btn-outline-yellow btn-sm" style="width: 100%; font-size: 0.775rem;">Apply for Role</a>
+            </div>
+
+            <div class="team-placeholder-card">
+              <span class="badge" style="background: rgba(255,255,255,0.06); color: var(--text-muted); font-size: 0.7rem; margin-bottom: 8px;">Internal Governance</span>
+              <h4 style="color: var(--text-white); font-size: 1.1rem; font-weight: 800; margin-bottom: 4px;">Secretary</h4>
+              <p style="color: var(--text-muted); font-size: 0.825rem; line-height: 1.4; margin-bottom: 12px;">Maintain meeting records, organizational calendar, drive structure, and web updates.</p>
+              <a href="become-a-member.html#exec-roles" class="btn btn-outline-yellow btn-sm" style="width: 100%; font-size: 0.775rem;">Apply for Role</a>
+            </div>
+
+            <div class="team-placeholder-card">
+              <span class="badge" style="background: rgba(255,255,255,0.06); color: var(--text-muted); font-size: 0.7rem; margin-bottom: 8px;">Event Execution</span>
+              <h4 style="color: var(--text-white); font-size: 1.1rem; font-weight: 800; margin-bottom: 4px;">Event Planner / Logistics</h4>
+              <p style="color: var(--text-muted); font-size: 0.825rem; line-height: 1.4; margin-bottom: 12px;">Brainstorm workshops, manage event catalog, coordinate schedules and logistics.</p>
+              <a href="become-a-member.html#exec-roles" class="btn btn-outline-yellow btn-sm" style="width: 100%; font-size: 0.775rem;">Apply for Role</a>
+            </div>
+
+            <div class="team-placeholder-card">
+              <span class="badge" style="background: rgba(255,255,255,0.06); color: var(--text-muted); font-size: 0.7rem; margin-bottom: 8px;">External Partnerships</span>
+              <h4 style="color: var(--text-white); font-size: 1.1rem; font-weight: 800; margin-bottom: 4px;">Outreach & External Affairs</h4>
+              <p style="color: var(--text-muted); font-size: 0.825rem; line-height: 1.4; margin-bottom: 12px;">Build school partnerships, community relationships, and represent BOLD at events.</p>
+              <a href="become-a-member.html#exec-roles" class="btn btn-outline-yellow btn-sm" style="width: 100%; font-size: 0.775rem;">Apply for Role</a>
+            </div>
+
+            <div class="team-placeholder-card">
+              <span class="badge" style="background: rgba(255,255,255,0.06); color: var(--text-muted); font-size: 0.7rem; margin-bottom: 8px;">Fiscal Stewardship</span>
+              <h4 style="color: var(--text-white); font-size: 1.1rem; font-weight: 800; margin-bottom: 4px;">Finance Lead</h4>
+              <p style="color: var(--text-muted); font-size: 0.825rem; line-height: 1.4; margin-bottom: 12px;">Oversee fundraising, grant applications, budget records, and expense tracking.</p>
+              <a href="become-a-member.html#exec-roles" class="btn btn-outline-yellow btn-sm" style="width: 100%; font-size: 0.775rem;">Apply for Role</a>
+            </div>
+
+            <div class="team-placeholder-card">
+              <span class="badge" style="background: rgba(255,255,255,0.06); color: var(--text-muted); font-size: 0.7rem; margin-bottom: 8px;">Digital Branding</span>
+              <h4 style="color: var(--text-white); font-size: 1.1rem; font-weight: 800; margin-bottom: 4px;">Communications & Social</h4>
+              <p style="color: var(--text-muted); font-size: 0.825rem; line-height: 1.4; margin-bottom: 12px;">Manage @BOLD.Ontario, newsletters, audience engagement strategies, and DMs.</p>
+              <a href="become-a-member.html#exec-roles" class="btn btn-outline-yellow btn-sm" style="width: 100%; font-size: 0.775rem;">Apply for Role</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions Section (The 9 Tailored FAQs) -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-yellow" style="margin-bottom: 8px;">Common Inquiries</span>
+          <h2 style="font-size: 2.2rem; font-weight: 900; color: var(--text-white); margin-bottom: 12px;">
+            Frequently Asked Questions
+          </h2>
+          <p class="section-subtitle">
+            Find answers to commonly asked questions about BOLD's mission, audience, programs, school presentations, and participation pathways.
+          </p>
+        </div>
+
+        <div class="faq-wrap">
+          <!-- FAQ 1 -->
+          <div class="faq-item open">
+            <button class="faq-question" aria-expanded="true">
+              <span>What is BOLD?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              BOLD (Black Outreach Leadership Directive) is a student-led community initiative committed to increasing and enabling Black student success at the post-secondary level.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Who does BOLD serve?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              BOLD supports Black students exploring or navigating post-secondary education, and works with the families, educators, and organizations around them.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How can I volunteer or become a student leader?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Complete the interest form on our <a href="become-a-member.html" style="color: var(--bold-yellow); text-decoration: underline;">Become a Member</a> page or scan our Student / Executive QR codes. Current student and executive roles are actively recruiting across Ontario.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How can my school request an outreach presentation?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Send us a request through the <a href="partnerships.html" style="color: var(--bold-yellow); text-decoration: underline;">Partnerships page</a> or the <a href="contact.html" style="color: var(--bold-yellow); text-decoration: underline;">Contact form</a> and choose “School outreach request”. You can also reach our Outreach team directly at <a href="mailto:bold.cos@gmail.com" style="color: var(--bold-yellow);">bold.cos@gmail.com</a>.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Does BOLD offer mentorship?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Connecting students with mentors is a core part of BOLD's work. Current mentorship availability and cohort details are posted on the <a href="programs.html" style="color: var(--bold-yellow); text-decoration: underline;">Programs & Resources page</a>.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How can an organization partner with BOLD?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Use the partnership inquiry form on the <a href="partnerships.html" style="color: var(--bold-yellow); text-decoration: underline;">Partnerships page</a> and tell us what you'd like to explore together, or contact <a href="mailto:bold.cos@gmail.com" style="color: var(--bold-yellow);">bold.cos@gmail.com</a>.
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How can I support BOLD financially?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Visit the <a href="donate.html" style="color: var(--bold-yellow); text-decoration: underline;">Donate page</a> to register your interest as a donor or sponsor. Contributions directly support student workshops, campus visit transport, and educational resources.
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Where does BOLD operate?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              BOLD is active across Ontario, including high school outreach in London and Southwestern Ontario, the Greater Toronto Area, and expanding regional communities.
+            </div>
+          </div>
+
+          <!-- FAQ 9 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How can I stay informed about upcoming events?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Subscribe to our newsletter in the footer, check the <a href="events.html" style="color: var(--bold-yellow); text-decoration: underline;">Events page</a>, or follow <a href="https://instagram.com/BOLD.Ontario" target="_blank" rel="noopener noreferrer" style="color: var(--bold-yellow);">@BOLD.Ontario</a> on Instagram.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prominent Contact Call to Action Strip -->
+    <section class="section section-dark">
+      <div class="container">
+        <div style="background: linear-gradient(135deg, var(--bg-surface-2) 0%, #151820 100%); border: 1.5px solid var(--bold-yellow); border-radius: var(--radius-xl); padding: 48px; text-align: center; max-width: 900px; margin: 0 auto; box-shadow: 0 0 30px rgba(253, 244, 150, 0.1);">
+          <span class="badge badge-yellow" style="margin-bottom: 12px;">Get In Touch</span>
+          <h2 style="font-size: 2rem; font-weight: 900; color: var(--text-white); margin-bottom: 12px;">
+            Connect with the BOLD Leadership Team
+          </h2>
+          <p style="font-size: 1.05rem; color: var(--text-secondary); max-width: 650px; margin: 0 auto 28px; line-height: 1.6;">
+            Have questions about student membership, secondary school workshops, mentorship, or executive positions? Reach out to us directly anytime.
+          </p>
+
+          <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <a href="mailto:bold.cos@gmail.com" class="btn btn-primary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email: bold.cos@gmail.com</span>
+            </a>
+            <a href="https://instagram.com/BOLD.Ontario" target="_blank" rel="noopener noreferrer" class="btn btn-outline-yellow btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>Instagram: @BOLD.Ontario</span>
+            </a>
+            <a href="contact.html" class="btn btn-secondary btn-lg">Contact Form</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Contact -->
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 16px;">
+            <img src="assets/images/bold-logo.png" alt="BOLD Logo" class="brand-logo-img">
+            <div class="brand-text-wrap">
+              <span class="brand-acronym">BOLD<span class="brand-dot">.</span></span>
+              <span class="brand-subtext">Directive</span>
+            </div>
+          </a>
+          <p class="footer-tagline">
+            Enabling Black student success at the post-secondary level through mentorship, educational outreach, leadership development, and community connection.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 16px;">
+            <a href="mailto:bold.cos@gmail.com" class="contact-item-link" style="color: var(--bold-yellow);">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>bold.cos@gmail.com</span>
+            </a>
+            <a href="https://instagram.com/BOLD.Ontario" target="_blank" rel="noopener noreferrer" class="contact-item-link" style="color: var(--bold-yellow);">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>@BOLD.Ontario</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="programs.html" class="footer-link">Programs & Resources</a></li>
+            <li><a href="events.html" class="footer-link">Events & Tours</a></li>
+            <li><a href="impact.html" class="footer-link">Our Impact</a></li>
+            <li><a href="partnerships.html" class="footer-link">Partnerships</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Get Involved -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Get Involved</h4>
+          <ul class="footer-links">
+            <li><a href="become-a-member.html" class="footer-link">Become a Member</a></li>
+            <li><a href="become-a-member.html#exec-roles" class="footer-link">Executive Positions</a></li>
+            <li><a href="donate.html" class="footer-link">Donate & Support</a></li>
+            <li><a href="partnerships.html" class="footer-link">Request School Presentation</a></li>
+            <li><a href="#qr-signup" class="footer-link">Scan QR Codes</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Stay Connected</h4>
+          <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 14px;">
+            Subscribe to receive updates on upcoming high school workshops, campus tours, and mentorship cohorts.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to BOLD updates!'); this.reset();">
+            <input type="email" placeholder="Your email address" class="form-input" style="padding: 10px 14px; font-size: 0.85rem;" required>
+            <button type="submit" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center; margin-top: 8px;">
+              <span>Subscribe</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; <span id="currentYear">2026</span> BOLD — Black Outreach Leadership Directive. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <button class="footer-link" data-modal-target="privacyModal">Privacy Policy</button>
+          <button class="footer-link" data-modal-target="termsModal">Terms of Use</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Privacy Modal -->
+  <div class="modal-overlay" id="privacyModal" role="dialog" aria-modal="true" aria-label="Privacy Policy">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close Modal"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+      <span class="badge badge-yellow" style="margin-bottom: 8px;">Privacy & Trust</span>
+      <h3 style="font-size: 1.65rem; font-weight: 800; color: var(--text-white); margin-bottom: 12px;">Privacy Policy</h3>
+      <div style="max-height: 380px; overflow-y: auto; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+        <p>BOLD is committed to protecting student and family privacy. Information collected via sign-up forms is used exclusively for program communication, mentorship coordination, and event notifications.</p>
+        <p>We do not sell, rent, or share personal information with third parties. For questions or data requests, contact bold.cos@gmail.com.</p>
+      </div>
+      <button class="btn btn-secondary modal-close-btn" style="position: static; width: 100%;">Close</button>
+    </div>
+  </div>
+
+  <!-- Terms Modal -->
+  <div class="modal-overlay" id="termsModal" role="dialog" aria-modal="true" aria-label="Terms of Use">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close Modal"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+      <span class="badge badge-yellow" style="margin-bottom: 8px;">Community Guidelines</span>
+      <h3 style="font-size: 1.65rem; font-weight: 800; color: var(--text-white); margin-bottom: 12px;">Terms of Use</h3>
+      <div style="max-height: 380px; overflow-y: auto; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+        <p>BOLD is a student-led community initiative. All resources, workshops, and mentorship pairings are provided in good faith to support post-secondary educational attainment.</p>
+        <p>All participants, mentors, and members are expected to foster welcoming, respectful, and safe environments for all attendees.</p>
+      </div>
+      <button class="btn btn-secondary modal-close-btn" style="position: static; width: 100%;">Close</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
