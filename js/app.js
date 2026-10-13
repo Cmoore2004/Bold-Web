@@ -192,7 +192,7 @@
 
       if (!filtered.length) {
         container.innerHTML = `
-          <div style="grid-column: 1 / -1; text-align: center; padding: 48px; background: var(--bg-surface-1); border-radius: var(--radius-lg); border: 1px dashed var(--border-medium);">
+          <div style="grid-column: 1 / -1; text-align: center;">
             <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 8px;">No resources found matching "${searchQuery}"</p>
             <button class="btn btn-sm btn-secondary" id="resetResourceSearchBtn">Reset Search Filters</button>
           </div>
@@ -268,7 +268,7 @@
 
       if (!filtered.length) {
         container.innerHTML = `
-          <div style="grid-column: 1 / -1; text-align: center; padding: 48px; background: var(--bg-surface-1); border-radius: var(--radius-lg); border: 1px dashed var(--border-medium);">
+          <div style="grid-column: 1 / -1; text-align: center;">
             <p style="color: var(--text-muted); font-size: 1.05rem;">No ${currentStatus} events currently listed.</p>
           </div>
         `;
@@ -810,7 +810,7 @@
           </div>
           <div class="branch-region">${br.region}</div>
           <p class="branch-desc">${br.description}</p>
-          <div style="font-size: 0.8125rem; color: var(--text-muted); background: var(--bg-surface-1); padding: 12px; border-radius: var(--radius-sm); margin-top: 6px;">
+          <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 6px;">
             <div><strong>Key Campus Partners:</strong> ${br.institutions}</div>
             <div style="margin-top: 4px;"><strong>Contact:</strong> ${br.email}</div>
           </div>
