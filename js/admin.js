@@ -55,7 +55,7 @@
 
         <div class="admin-drawer-body">
           <!-- Highlight Mode Toggle -->
-          <div style="background: var(--bg-surface-2); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between; gap: 12px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px;">
             <div>
               <div style="font-weight: 700; font-size: 0.95rem; color: var(--text-white);">Highlight Placeholders Mode</div>
               <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Visually outline all items pending verification</div>
@@ -81,25 +81,25 @@
           <div style="display: flex; flex-direction: column; gap: 10px;" id="adminChecklistContainer"></div>
 
           <!-- Submissions Inspector & Data Exporter -->
-          <div style="background: var(--bg-surface-2); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 12px;">
+          <div style="display: flex; flex-direction: column; gap: 12px;">
             <div style="font-weight: 700; font-size: 0.95rem; color: var(--text-white); display: flex; align-items: center; justify-content: space-between;">
               <span>Live Form Submissions</span>
               <button class="btn btn-sm btn-outline-gold" id="exportDataBtn">Export All (JSON)</button>
             </div>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.85rem;" id="submissionCounters">
-              <div style="background: var(--bg-surface-1); padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+              <div>
                 <div style="color: var(--text-muted);">Volunteers</div>
                 <div style="font-size: 1.2rem; font-weight: 800; color: var(--gold-400);" id="cntVolunteers">0</div>
               </div>
-              <div style="background: var(--bg-surface-1); padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+              <div>
                 <div style="color: var(--text-muted);">Partners</div>
                 <div style="font-size: 1.2rem; font-weight: 800; color: var(--gold-400);" id="cntPartners">0</div>
               </div>
-              <div style="background: var(--bg-surface-1); padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+              <div>
                 <div style="color: var(--text-muted);">Event RSVPs</div>
                 <div style="font-size: 1.2rem; font-weight: 800; color: var(--gold-400);" id="cntRsvps">0</div>
               </div>
-              <div style="background: var(--bg-surface-1); padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+              <div>
                 <div style="color: var(--text-muted);">Newsletter</div>
                 <div style="font-size: 1.2rem; font-weight: 800; color: var(--gold-400);" id="cntNewsletter">0</div>
               </div>
